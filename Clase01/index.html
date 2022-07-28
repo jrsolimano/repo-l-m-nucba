@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Clase 02</title>
+</head>
+
+<body>
+    <!-- 
+        ETIQUETAS ESTRUCTURALES
+
+            Son todos los elementos que tenemos a disposicion para diagramar un sitio web.
+
+                1) div
+                2) section
+                3) aside
+                4) header
+                5) article
+                6) footer
+                7) span
+                8) main
+
+        ELEMENTOS PRINCIPALES DE HTML
+
+                1) p
+                2) h1 - h6
+                3) ol
+                4) ul
+                5) li
+                6) a
+                7) table
+                8) img
+                9) form
+    -->
+
+
+
+    <header>
+
+        <h1> Trabajando con tablas</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contactenos</a></li>
+            <li><a href="#">Ayuda</a>/li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <div>
+                <!-- Elemento en bloque que ocupa todo el ancho  de la pagina -->
+                <strong>Esto esta en negrita</strong>
+            </div>
+            <a href="#">Esto es un link1</a>
+            <a href="#">Esto es un link2</a> <!-- Elemento en linea, el resto de los elementos los coloca al lado. -->
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio cumque sunt fugiat, ab molestiae, facere
+                debitis dignissimos deleniti architecto aut rerum quos reprehenderit veniam porro cum ipsa repellendus
+                laudantium incidunt facilis molestias est omnis nemo. Natus necessitatibus, eveniet fugiat praesentium
+                laboriosam cum omnis? Consectetur provident illo modi nostrum perspiciatis sunt?</p>
+        </section>
+        <section>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro aliquam, mollitia maiores nam veniam
+                consequatur earum, corporis architecto repellat doloribus impedit eum ducimus unde sunt iusto dolores
+                aliquid quisquam. Magnam omnis, sint labore quibusdam, dolorum, odio consequatur quis natus sed neque
+                rerum aliquam minus ipsa exercitationem voluptatum perspiciatis laboriosam nesciunt?</p>
+        </section>
+        <section>
+            <!--  TABLAS -->
+            <table>
+                <tr>
+                    <!-- TABLE ROW (filas de la tabla)-->
+                    <th>Lunes</th> <!-- TABLE HEADER (encabezado de la tabla) -->
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+                <tr>
+                    <td>Gimnasio</td> <!-- TABLE DATA, INFORMACION DE LA TABLA -->
+                    <td>Facultad</td>
+                    <td></td>
+                    <td>Trabajar</td>
+                    <td>Salir</td>
+                </tr>
+                <tr>
+                    <td>Hacer la tarea</td>
+                    <td> Ir a trabajar</td>
+                    <td></td>
+                    <td> Gym</td>
+                    <td>Estudiar</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+
+            <!-- FORMULARIO -->
+            <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input-->
+
+            
+            <!-- 
+                
+                FORMAS DE ENVIAR LA INFORMACION MEDIANTE FORMULARIO
+                
+                method="GET" o  method="POST" 
+                
+                GET: envia la informacion del formulario por la URL.
+                POST + ACTION: envia la informacion a la pagina que pasamos por ACTION.
+            
+
+                target="_SELF" o target="_BLANK"
+
+                _self: procesa en la misma ventana.
+                _blank: procesa en una ventana nueva.
+
+            -->
+            <form action="" method="GET">
+                <div>
+                    <label for="nombre">Nombre</label> <!-- for / id -->
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="Ingresa tu apellido" />
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Ingresa tu password" />
+                </div>
+                <div>
+                    <label for="dni">Numero DNI</label>
+                    <input type="number" id="dni" placeholder="Ingresa tu DNI" />
+                </div>
+                <div>
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" placeholder="Telefono" />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="Ingresa tu Mail" />
+                </div>
+                <div>
+                    <h3>A qué se dedica?</h3>
+                    <label for="empleado">Empleado</label>
+                    <input type="radio" name="profesion" id="empleado">
+                    <label for="estudiante">Estudiante</label>
+                    <input type="radio" name="profesion" id="estudiante">
+                    <label for="autonomo">Autonomo</label>
+                    <input type="radio" name="profesion" id="autonomo">
+                    <label for="jubilado">Jubilado</label>
+                    <input type="radio" name="profesion" id="jubilado">
+                </div>
+                <div>
+                    <select name="edad" id="edad">
+                        <option value="">Seleccione su edad</option>
+                        <option value="opcion1">Opcion 1</option>
+                        <option value="opcion2">Opcion 2</option>
+                        <option value="opcion3">Opcion 3</option>
+                        <option value="opcion4">Opcion 4</option>
+                    </select>
+                </div>
+                <div>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10"
+                        required>Escriba una descripcion</textarea>
+                </div>
+                <div>
+                    <label for="terminos">Aceptar terminos y condiciones</label>
+                    <input type="checkbox" id="terminos">
+                </div>
+                <div>
+                    <label for="fecha-de-nacimiento"> Fecha de nacimiento</label>
+                    <input type="date" id="fecha-de-nacimiento">
+                </div>
+                <div>
+                    <label for="color">Color</label>
+                    <input type="color">
+                </div>
+                <div>
+
+                    <!-- Forma 1 de enviar un formulario mediante INPUT SUBMIT-->
+                    <!-- <input type="submit" value="Enviar Formulario" /> -->
+
+                    <!-- Forma 2 de enviar un formulario mediante BUTTON SUBMIT -->
+                    <button type="submit">Enviar</button>
+
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>Sobre nosotros</li>
+            <li>Contactenos</li>
+            <li>Ayuda</li>
+        </ul>
+    </footer>
+
+    <!-- 
+        
+        Elementos  en blqoue (block) 
+        
+        Ocupan todo el ancho de la pagina que tengan disponible: h1, h2, h3, p, ul, li, div, header, nav, etc...
+
+            https://developer.mozilla.org/es/docs/Web/HTML/Block-level_elements
+    -->
+
+    <!-- 
+
+        Elementos en linea (inline)
+
+            https://developer.mozilla.org/es/docs/Web/HTML/Inline_elements
+    -->
+</body>
+
+</html>

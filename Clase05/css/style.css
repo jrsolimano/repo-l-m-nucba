@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.primer-div{
+
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    /*padding: 10px 20px 30px  40px;*/
+    padding: 5px;
+    margin:30px;
+    overflow: auto;
+    
+}
+
+.divs{
+
+    display: inline;
+}
+.no-inline{
+
+    display: block;
+}
+/*
+    POSITION
+
+        1) Relative. En relacion al contendor del elemento que se le asigna el atributo.
+        2) Absoluto. En relacion al viewport entero.
+
+*/
+
+.div-position1{
+
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    border: 2px dotted black;
+    position: relative; /*posision relativa en relacion al contenedor (.contenedor)*/
+    left: 20px;
+    top: 20px;
+}
+
+.div-position2{
+
+    height: 40px;
+    width: 40px;
+    background-color: green;
+    border: 2px dotted black;
+    position: relative;
+    top: 50px;
+    right: 30px;
+}
+
+.div-position3{
+
+    height: 100px;
+    width: 100%;
+    background-color: yellow;
+    border: 2px dotted black;
+    position: absolute;
+    top: 0px;
+}
+
+.div-position3 ul li {
+
+    display: inline;
+}
+
+.div-position3 ul li:hover{
+
+
+    color:white
+}
+
+.div-position4{
+
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    border: 2px dotted black;
+    position: fixed;
+
+}
+
+

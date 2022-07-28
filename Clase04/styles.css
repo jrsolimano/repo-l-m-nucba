@@ -1,0 +1,67 @@
+/* Estos son selectores de etiqueta */
+/*
+    Jerarquía de estilos.
+
+        - Atributo style.
+        - Estilos del selector mediante  ID
+        - Estilos  del selector mediante clase y pseudoclase.
+        - Etiqueta Style en el header
+        - Estilos por archivos externos.
+        - Selector universal *
+
+*/
+/** {
+    
+    border: 1px solid  red;
+} */
+
+h1 {
+
+    color: red;
+
+}
+
+
+p {
+
+    color: yellow;
+    /*font-size: 1em;*/
+}
+
+a:hover {
+
+    color: coral;
+
+}
+
+#titulo-principal {
+
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+.titulo {
+
+    color: red;
+}
+
+.parrafo {
+
+    color: pink;
+}
+
+/*
+
+    BACKGROUNDS
+
+        1) background-color.
+        2) background-image
+
+*/
+
+#primer-parrafo{
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
