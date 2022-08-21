@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+
+    background: rgb(234,219,254);
+    background: linear-gradient(90deg, rgba(234,219,254,1) 0%, rgba(252,236,216,1) 24%, rgba(252,236,216,1) 69%, rgba(234,219,254,1) 100%);
+    
+    
+}
+
+.main-div{
+
+    width: 100%;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.main-div div{
+
+    width: 486px;
+    height: 458px;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+   
+}
+
+.main-div div img.profile{
+
+    width: 150px;
+    height: 150px;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.main-div div strong{
+
+    font-size: 16pt;
+}
+.main-div div p{
+
+    width: 220px;
+    text-align: center;
+}
+.main-div div .buttons{
+
+    display: flex;
+    flex-direction: row;
+    height: auto;
+
+}
+
+.buttons .follow{
+
+    background: rgb(250,57,103);
+    background: linear-gradient(90deg, rgba(250,57,103,1) 0%, rgba(250,150,57,1) 100%);
+    width: 200px;
+    height: 50px;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    border: none;
+    
+}
+
+
+
+.buttons .send-message{
+
+    background-color: #FFEDD2;
+    width: 200px;
+    height: 50px;
+    border-radius: 2em;
+
+    display: flex;
+    align-items: center;
+    border: none;
+
+}
+
+a{
+
+    color: black;
+    text-decoration: none;
+    margin: auto;
+    font-size: 12pt;
+}
+
+ img{
+
+    width:  21px;
+    height: 21px;
+    margin-right: 5px;
+}

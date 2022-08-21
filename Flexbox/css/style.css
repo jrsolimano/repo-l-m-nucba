@@ -1,0 +1,104 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    background: #e9e9e9;
+}
+
+.contenedor{
+
+    width: 500px;
+    height: 200px;
+    background: #fff;
+    padding: 10px;
+    border: 10px solid #2C3E50;
+    margin: 20px;
+    display: flex;
+
+    /* flex-direction:; */
+    /*
+        1) row 
+        2) row-reverse
+        3) column
+        4) column-reverse
+
+    */
+    /* Dirección en la cual  se van a posicionar nuestras cajas */
+
+    /* flex-wrap:; */
+    /*
+        1) no-wrap
+        2) wrap -> todos los elementos quedarán adaptados al 100% del contenedor.
+        3) wrap-reverse
+    */
+    /* Si un elemento no entra, se va colocando debajo.*/
+   
+    /*flex-flow:;*/
+    /* Combinación entre flex-direction y flex-wrap */
+
+
+    /* justify-content */
+    /*Define la disposicion de los elementos */
+    /*
+
+        1) flex-start (izquierda)
+        2) flex-end (derecha)
+        3) center (centrado)
+        4) space-arround (lo  distribuye por todo el ancho del contendor con un espaciado entre los elementos)
+        5) space-between (lo distribye por todo el ancho del contenedor, pero solo entre los elementos, sin espacios entre el primero y el ultimo)
+
+    */
+
+    /* align-items */
+    /* Lo distribuye en la posicion contraria a la direction que está establecida. En este caso, al ser un row, centrará el contenido sobre el eje "Y" */
+    /*
+
+        1) flex-start
+        2) flex-end
+        3) center
+        4) stretch (con height sin definir, realiza que los elementos abarquen la totalidad del contenedor)
+        5) baseline
+
+    */
+
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    /*align-content: center;*/
+
+    /* align-content */
+    /* Cuando hay varias lineas de elementos, elementos  con wrap */
+    /*
+        1) flex-start
+        2) flex-end
+        3) center
+        4) space-between
+        5) space-around
+
+    */
+}
+
+.elemento{
+
+    color:#fff;
+    margin:5px;
+    width: 50px;
+    height: 50px;
+    background: #e67e22;
+    text-align: center;
+    flex-grow: 1;
+
+    /* flex-basis */
+    /* es la sustitución del width o el height dependiendo la orientación del direction*/
+
+
+    /* flex-grow*/
+    /* Cada elemento crece proporcionalmente hasta ocupar el 100% del contenedor */
+
+}

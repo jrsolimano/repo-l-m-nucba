@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+
+}
+
+body {
+
+    background-color: #141414;
+}
+
+.hr-class {
+
+    background-color: #f91442;
+    height: 5px;
+    border: none;
+    margin-top: 20px;
+}
+
+.contenido-general {
+
+    width: 960px;
+    margin: auto;
+
+
+}
+
+h1 {
+
+    color: white;
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+
+}
+
+h3 {
+
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+p {
+
+    /*margin-bottom: 2rem;*/
+    max-height: 960px;
+    color: white;
+}
+
+
+.flex-examples {
+
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #242424;
+    margin-top: 20px;
+}
+
+
+
+.p-subtitle {
+
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.row {
+
+    display: flex;
+    flex-direction: row;
+    /* Por defecto la dirección de flex es row*/
+    gap: 10px;
+}
+
+.reverse {
+
+    flex-direction: row-reverse;
+
+}
+
+.column {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Espacio entre los contenedores */
+}
+
+.column-reverse {
+
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+}
+
+.caja-flex {
+
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* orientación horizontal */
+    align-items: center;
+    /* orientación vertical / horizontal, de acuerdo a la orientacion del flex-direction */
+
+}
+
+.wrap {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 350px;
+}
+
+.no-wrap {
+    /* Incorporá todos los elementos interiores en una misma línea. */
+
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 450px;
+    gap: 5px;
+}
+
+.jc-start {
+
+    display: flex;
+    justify-content: flex-start;
+    /* Valor por defecto del justify-content */
+    gap: 10px;
+}
+
+.jc-end {
+
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.jc-center {
+
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.jc-space-between {
+
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.jc-space-around {
+
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.jc-space-evenly {
+
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.ai-flex-examples {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #242424;
+    margin-top: 20px;
+}
+
+.props-align{
+
+    height: 350px;
+    background-color: grey;
+    border-radius: 1em;
+    padding: 1em;
+    max-width: 500px;
+}
+
+.ai-flex-start{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-end;
+
+}
+
+.ac-content{
+
+    display: flex;
+    flex-direction: row;
+}

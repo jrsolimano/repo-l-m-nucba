@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--
+
+        CONTENEDOR PADRE
+
+            display: flex;
+
+        ELEMENTOS
+
+            flex-direction: row; 
+            
+                o 
+            
+            flex-direction: column;
+    -->
+
+
+    <div class="contenido-general">
+        <h1>Flexbox</h1>
+        <h2></h2>
+        <hr class="hr-class" />
+        <h2>Flex direction</h2>
+        <p>Definimos la direccion del flex</p>
+        <div class="flex-examples">
+            <p class="p-subtitle">flex-direction: row; (por defecto)</p>
+            <!-- Row -->
+            <div class="row">
+                <div class="caja-flex">
+                    <p>1</p>
+                </div>
+                <div class="caja-flex">
+                    <p>2</p>
+                </div>
+                <div class="caja-flex">
+                    <p>3</p>
+                </div>
+            </div>
+            <!-- Row Reverse-->
+            <p class="p-subtitle">row-reverse</p>
+            <div class="row reverse">
+                <div class="caja-flex">
+                    <p>1</p>
+                </div>
+                <div class="caja-flex">
+                    <p>2</p>
+                </div>
+                <div class="caja-flex">
+                    <p>3</p>
+                </div>
+            </div>
+            <!-- Column -->
+            <p class="p-subtitle">column</p>
+            <div class="column">
+                <div class="caja-flex">
+                    <p>1</p>
+                </div>
+                <div class="caja-flex">
+                    <p>2</p>
+                </div>
+                <div class="caja-flex">
+                    <p>3</p>
+                </div>
+            </div>
+            <!-- column-reverse -->
+            <p class="p-subtitle">column-reverse</p>
+            <div class="column-reverse">
+                <div class="caja-flex">
+                    <p>1</p>
+                </div>
+                <div class="caja-flex">
+                    <p>2</p>
+                </div>
+                <div class="caja-flex">
+                    <p>3</p>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-class" />
+        <h2>Flex Wrap</h2>
+        <p>Por defecto todos los elementos flex ocupan una sola linea (nowrap). Podemos cambiar esto con esta propiedad.
+        </p>
+        <div class="flex-examples">
+            <p class="p-subtitle">Wrap</p>
+            <div class="wrap">
+                <div class="caja-flex">
+                    <p>1</p>
+                </div>
+                <div class="caja-flex">
+                    <p>2</p>
+                </div>
+                <div class="caja-flex">
+                    <p>3</p>
+                </div>
+                <div class="caja-flex">
+                    <p>4</p>
+                </div>
+                <div class="caja-flex">
+                    <p>5</p>
+                </div>
+                <div class="caja-flex">
+                    <p>6</p>
+                </div>
+                <div class="caja-flex">
+                    <p>7</p>
+                </div>
+                <div class="caja-flex">
+                    <p>8</p>
+                </div>
+                <div class="caja-flex">
+                    <p>9</p>
+                </div>
+            </div>
+            <p class="p-subtitle">nowrap</p>
+            <div class="no-wrap">
+                <div class="caja-flex">
+                    <p>1</p>
+                </div>
+                <div class="caja-flex">
+                    <p>2</p>
+                </div>
+                <div class="caja-flex">
+                    <p>3</p>
+                </div>
+                <div class="caja-flex">
+                    <p>4</p>
+                </div>
+                <div class="caja-flex">
+                    <p>5</p>
+                </div>
+                <div class="caja-flex">
+                    <p>6</p>
+                </div>
+                <div class="caja-flex">
+                    <p>7</p>
+                </div>
+                <div class="caja-flex">
+                    <p>8</p>
+                </div>
+                <div class="caja-flex">
+                    <p>9</p>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-class" />
+        <h2>justify-content</h2>
+        <p>Con esta p ropiedad la alineación a lo largo del eje principal. Lo vamos a usar mucho en conjunto con
+            align-items. </p>
+        <div class="flex-examples">
+            <!-- flex-start -->
+            <p class="p-subtitle">flex-start</p>
+            <div class="jc-start">
+                <div class="caja-flex">
+                    <p>1</p>
+                </div>
+                <div class="caja-flex">
+                    <p>2</p>
+                </div>
+                <div class="caja-flex">
+                    <p>3</p>
+                </div>
+            </div>
+            <!--flex-end -->
+            <p class="p-subtitle">flex-end</p>
+            <div class="jc-end">
+                <div class="caja-flex">
+                    <p>1</p>
+                </div>
+                <div class="caja-flex">
+                    <p>2</p>
+                </div>
+                <div class="caja-flex">
+                    <p>3</p>
+                </div>
+            </div>
+            <!-- center -->
+            <p class="p-subtitle">center</p>
+            <div class="jc-center">
+                <div class="caja-flex">
+                    <p>1</p>
+                </div>
+                <div class="caja-flex">
+                    <p>2</p>
+                </div>
+                <div class="caja-flex">
+                    <p>3</p>
+                </div>
+            </div>
+            <!--space-between -->
+            <p class="p-subtitle">space-between</p>
+            <div class="jc-space-between">
+                <div class="caja-flex">
+                    <p>1</p>
+                </div>
+                <div class="caja-flex">
+                    <p>2</p>
+                </div>
+                <div class="caja-flex">
+                    <p>3</p>
+                </div>
+            </div>
+            <!--space-around -->
+            <p class="p-subtitle">space-around</p>
+            <div class="jc-space-around">
+                <div class="caja-flex">
+                    <p>1</p>
+                </div>
+                <div class="caja-flex">
+                    <p>2</p>
+                </div>
+                <div class="caja-flex">
+                    <p>3</p>
+                </div>
+            </div>
+            <!--space-evenly -->
+            <p class="p-subtitle">space-evenly</p>
+            <div class="jc-space-evenly">
+                <div class="caja-flex">
+                    <p>1</p>
+                </div>
+                <div class="caja-flex">
+                    <p>2</p>
+                </div>
+                <div class="caja-flex">
+                    <p>3</p>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-class" />
+        <h2>align-items</h2>
+        <p> Con esta propiedad alineamos los elementos en el eje cruzado, el contrario al eje pricipal.</p>
+        <div class="ai-flex-examples">
+            <p class="p-subtitle">flex-start</p>
+            <div class="props-align">
+                <div class="ai-flex-start">
+                    <div class="caja-flex">
+                        <p>1</p>
+                    </div>
+                    <div class="caja-flex">
+                        <p>2</p>
+                    </div>
+                    <div class="caja-flex">
+                        <p>3</p>
+                    </div>
+                </div>
+            </div>
+            <p class="p-subtitle">flex-end</p>
+            <!--<div class="ai-flex-end">
+                <div class="caja-flex">
+                    <p>1</p>
+                </div>
+                <div class="caja-flex">
+                    <p>2</p>
+                </div>
+                <div class="caja-flex">
+                    <p>3</p>
+                </div>
+            </div>-->
+            <p class="p-subtitle">center</p>
+            <!--<div class="ai-center">
+                <div class="caja-flex">
+                    <p>1</p>
+                </div>
+                <div class="caja-flex">
+                    <p>2</p>
+                </div>
+                <div class="caja-flex">
+                    <p>3</p>
+                </div>
+            </div>-->
+            <p class="p-subtitle">strech</p>
+            <!--<div class="ai-sterch">
+                <div class="caja-flex">
+                    <p>1</p>
+                </div>
+                <div class="caja-flex">
+                    <p>2</p>
+                </div>
+                <div class="caja-flex">
+                    <p>3</p>
+                </div>
+            </div>-->
+        </div>
+        <hr class="hr-class" />
+        <h2>align-content</h2>
+        <p>Con esta propiedad definimos como se acomodan los elementos en el eje cruzado. Solo va a tener efecto si
+            tenemos varias lineas de elementos. (Si tenemos una sola linea de elementos, no va a tener ningun efecto.
+        </p>
+        <div class="flex-examples">
+            <div class="ac-content">
+                <p class="p-subtitle">flex-start</p>
+                <p class="p-subtitle">flex-end</p>
+                <p class="p-subtitle">center</p>
+                <p class="p-subtitle">space-between</p>
+                <p class="p-subtitle">space-around</p>
+                <p class="p-subtitle">strech</p>
+                <p class="p-subtitle">baseline</p>
+            </div>
+        </div>
+</body>
+
+</html>
