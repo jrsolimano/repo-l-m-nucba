@@ -600,8 +600,8 @@ footer span {
     height: calc(100vh - 65px);
     /* del 100% de la pantalla, restale 65px*/
     overflow-y: scroll;
-    /*z-index: 2;
-    display: none;*/
+    z-index: 2;
+    display: none;
 }
 
 .cart::-webkit-scrollbar {
@@ -690,4 +690,56 @@ footer span {
 .item-quantity{
 
     color: var(--text-gray);
+
+}
+
+.down{
+
+    background: var(--secondary);
+    border:1px solid var(--electrict);
+    cursor: pointer;
+}
+
+.up{
+
+    border: 1px solid var(--electrict);
+    cursor: pointer;
+
+}
+
+.divider{
+
+    margin-top: 20px;
+    border: 0.5px solid var(--electrict);
+}
+
+.cart-total{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.cart-total p{
+
+    color: var(--text-white);
+    font-weight: 700;
+
+}
+
+.cart-total span{
+
+    color: var(--text-white);
+    font-weight: 800;
+    font-size:18px;
+
+}
+
+#cart-toggle:checked + .cart{
+
+    /*Cuando #cart-toggle este checked, agregale a .cart display:flex; */
+
+    display: flex;
+
 }
